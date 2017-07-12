@@ -1,6 +1,7 @@
 package io.haydar.filescanner;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Haydar
@@ -11,39 +12,54 @@ import java.util.ArrayList;
 public class ScannerWrapper {
     public static final String TAG = "ScannerWrapper";
 
-    public static ArrayList scanDirs(String absolutePath) {
-
-        ArrayList<FileInfo> fileInfoArrayList = new ArrayList<>();
-
+    /**
+     * 递归扫描
+     *
+     * @param absolutePath
+     * @return
+     */
+    public static List<FileInfo> scanDirs(String absolutePath) {
+        List<FileInfo> result = new ArrayList<>();
         if (FileScannerJni.isLoadJNISuccess()) {
-            fileInfoArrayList = FileScannerJni.scanDirs(absolutePath);
+            result = FileScannerJni.scanDirs(absolutePath);
+        } else {
+            result = FileScannerJava.scanDirs(absolutePath);
         }
-        return fileInfoArrayList;
+        return result;
     }
 
-    public static ArrayList<FileInfo> scanFiles(String filePath,String type) {
-        ArrayList<FileInfo> fileInfoArrayList = new ArrayList<>();
+    public static List<FileInfo> scanFiles(String filePath, String type) {
+        List<FileInfo> result = new ArrayList<>();
         if (FileScannerJni.isLoadJNISuccess()) {
-            fileInfoArrayList = FileScannerJni.scanFiles(filePath,type);
+            result = FileScannerJni.scanFiles(filePath, type);
+        } else {
+            result = FileScannerJava.scanFiles(filePath);
         }
-        return fileInfoArrayList;
-
+        return result;
     }
 
     public static long getFileLastModifiedTime(String filePath) {
         if (FileScannerJni.isLoadJNISuccess()) {
             return FileScannerJni.getFileLastModifiedTime(filePath);
         } else {
-            return -1l;
+            return FileScannerJava.getFileLastModifiedTime(filePath);
         }
 
     }
 
-    public static ArrayList<FileInfo> scanUpdateDirs(String filePath) {
-        ArrayList<FileInfo> fileInfoArrayList = new ArrayList<>();
+    /**
+     * 扫描目录中的文件夹(不扫描子目录),不执行递归扫描
+     *
+     * @param filePath
+     * @return
+     */
+    public static List<FileInfo> scanUpdateDirs(String filePath) {
+        List<FileInfo> result = new ArrayList<>();
         if (FileScannerJni.isLoadJNISuccess()) {
-            fileInfoArrayList = FileScannerJni.scanUpdateDirs(filePath);
+            result = FileScannerJni.scanUpdateDirs(filePath);
+        } else {
+            result = FileScannerJava.scanUpdateDirs(filePath);
         }
-        return fileInfoArrayList;
+        return result;
     }
 }

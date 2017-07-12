@@ -12,6 +12,7 @@ public class ScannerUtil {
 
     /**
      * 全盘扫描
+     *
      * @param mContext
      */
     public static void scanAllDirAsync(Context mContext) {
@@ -21,6 +22,7 @@ public class ScannerUtil {
 
     /**
      * 获得文件夹hashcode
+     *
      * @param filePath
      * @return
      */
@@ -30,15 +32,17 @@ public class ScannerUtil {
 
     /**
      * 是否需要全盘扫描
+     *
      * @param mContext
      * @return
      */
     public static boolean isNeedToScannerAll(Context mContext) {
-      return   LocalFileCacheManager.getInstance(mContext).isNeedToScannerAll();
+        return LocalFileCacheManager.getInstance(mContext).isNeedToScannerAll();
     }
 
     /**
      * 增量扫描
+     *
      * @param mContext
      */
     public static void updateAllDirAsync(Context mContext) {

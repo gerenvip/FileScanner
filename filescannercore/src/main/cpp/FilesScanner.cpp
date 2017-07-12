@@ -8,6 +8,7 @@
 #include <sys/stat.h>
 #include <dirent.h>
 #include <string.h>
+#include <typeinfo>
 
 #define LOGE(...) \
   ((void)__android_log_print(ANDROID_LOG_ERROR, "FileScanner::", __VA_ARGS__))
@@ -20,6 +21,9 @@ jmethodID fileInfo_constructor;//目录文件实体类的构造方法
 jmethodID fileInfo_setFilePath;//目录文件实体类的setPath方法
 jmethodID fileInfo_setLastModifyTime;//目录文件实体类的setPath方法
 jmethodID fileInfo_setFileSize;//目录文件实体类的setFileSize方法
+
+jclass file_scanner_jni_java_cls;
+jmethodID fileScanner_isFileSupport_method;
 
 /**
  * 扫描文件夹
@@ -148,9 +152,9 @@ void doScannerFiles(JNIEnv *env, char *path, char *typeStr) {
         if (extension == NULL) {
             continue;
         }
-        if (strcmp(typeStr, extension) != 0) {
-            continue;
-        }
+//        if (strcmp(typeStr, extension) != 0) {
+//            continue;
+//        }
 
         char dirPath[250];
         strcpy(dirPath, path);
@@ -168,6 +172,25 @@ void doScannerFiles(JNIEnv *env, char *path, char *typeStr) {
         jstring str = env->NewStringUTF(dirPath);
         jlong time = statBuffer.st_mtim.tv_sec;
         jlong size = statBuffer.st_size;
+
+        LOGE("doScannerFiles method  %s",
+             fileScanner_isFileSupport_method == NULL ? "false" : "true");
+
+        LOGE("doScannerFiles class  %s",
+             file_scanner_jni_java_cls == NULL ? "false" : "true");
+        LOGE("doScannerFiles name=  '%s'", name);
+        LOGE("doScannerFiles size=  '%d'", size);
+
+        jstring tmpName = env->NewStringUTF(name);
+        jlong tmpSize = size;
+        jboolean support = env->CallStaticBooleanMethod(file_scanner_jni_java_cls,
+                                                        fileScanner_isFileSupport_method,
+                                                        tmpName, tmpSize);
+        env->DeleteLocalRef(tmpName);
+        if (!support) {
+            continue;
+        }
+
         env->CallVoidMethod(fileInfo_obj, fileInfo_setFilePath, str);   //set地址
         env->CallVoidMethod(fileInfo_obj, fileInfo_setLastModifyTime, time);//set最后一次修改的时间
         env->CallVoidMethod(fileInfo_obj, fileInfo_setFileSize, size);//set文件的大小
@@ -209,6 +232,27 @@ void init(JNIEnv *env) {
                                             "(J)V");
 }
 
+void initJavaCallback(JNIEnv *env, jobject thiz) {
+    LOGE("initJavaCallback jobject= %s", typeid(thiz).name());
+    if (file_scanner_jni_java_cls == NULL) {
+        LOGE("initJavaCallback 11111111 %s", file_scanner_jni_java_cls == NULL ? "false" : "true");
+        jclass tmp= env->FindClass("io/haydar/filescanner/FileScannerJni");
+        file_scanner_jni_java_cls = (jclass) env->NewGlobalRef(tmp);
+    }
+    LOGE("initJavaCallback 22222222");
+    LOGE("initJavaCallback getclass %s\n", file_scanner_jni_java_cls == NULL ? "false" : "true");
+
+    LOGE("initJavaCallback method %s", fileScanner_isFileSupport_method == NULL ? "false" : "true");
+    if (fileScanner_isFileSupport_method == NULL) {
+        fileScanner_isFileSupport_method = env->GetStaticMethodID(file_scanner_jni_java_cls,
+                                                                  "isFileSupport",
+                                                                  "(Ljava/lang/String;J)Z");
+        LOGE("initJavaCallback 3333333333");
+        LOGE("initJavaCallback method %s",
+             fileScanner_isFileSupport_method == NULL ? "false" : "true");
+    }
+}
+
 /**
  * 扫描指定格式的文件
  * @param env
@@ -217,10 +261,11 @@ void init(JNIEnv *env) {
  * @return
  */
 jobject JNICALL Java_io_haydar_filescanner_FileScannerJni_scanFiles
-        (JNIEnv *env, jclass thiz, jstring str, jstring type) {
+        (JNIEnv *env, jobject thiz, jstring str, jstring type) {
     char *path = (char *) env->GetStringUTFChars(str, NULL);
     char *typeStr = (char *) env->GetStringUTFChars(type, NULL);
     init(env);
+    initJavaCallback(env, thiz);
     doScannerFiles(env, path, typeStr);
     finish(env);
     env->ReleaseStringUTFChars(str, path);

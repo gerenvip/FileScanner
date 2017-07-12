@@ -10,6 +10,7 @@ import java.util.List;
 
 import io.haydar.filescanner.FileInfo;
 import io.haydar.filescanner.FileScanner;
+import io.haydar.filescanner.util.FilterUtil;
 
 /**
  * @author Haydar
@@ -37,10 +38,19 @@ public class DBFilesHelper {
 
     }
 
-    public void insertNewFiles(ArrayList<FileInfo> filesArrayList, String folder_id, FileScanner.ScannerListener mCommonListener) {
+    public void insertNewFiles(List<FileInfo> filesArrayList, String folder_id, FileScanner.ScannerListener mCommonListener) {
         DBManager.getWriteDB(mContext).beginTransaction();
         try {
             for (FileInfo fileInfo : filesArrayList) {
+                if (TextUtils.isEmpty(fileInfo.getFilePath())) {
+                    continue;
+                }
+                if (!FilterUtil.isFileSizeSupport(fileInfo.getFileSize())) {
+                    continue;
+                }
+                if (!FilterUtil.isMediaFileTimeLengthSupport(fileInfo.getFilePath())) {
+                    continue;
+                }
                 ContentValues contentValues = new ContentValues();
                 if (!TextUtils.isEmpty(fileInfo.getFilePath())) {
                     contentValues.put(FilesDBContract.COLUMN_NAME_DATA, fileInfo.getFilePath());
@@ -141,7 +151,7 @@ public class DBFilesHelper {
     }
 
     public void deleteFile(String filePath) {
-        String whereClause = FilesDBContract.COLUMN_NAME_DATA + "=" + "'"+filePath+"'";
+        String whereClause = FilesDBContract.COLUMN_NAME_DATA + "=" + "'" + filePath + "'";
         DBManager.getWriteDB(mContext).delete(FilesDBContract.TABLE_NAME, whereClause, null);
 
     }

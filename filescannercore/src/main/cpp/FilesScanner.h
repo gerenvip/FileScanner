@@ -20,7 +20,7 @@ JNIEXPORT jobject JNICALL Java_io_haydar_filescanner_FileScannerJni_scanDirs
  * Signature: (Ljava/lang/String;)Ljava/util/ArrayList;
  */
 JNIEXPORT jobject JNICALL Java_io_haydar_filescanner_FileScannerJni_scanFiles
-        (JNIEnv *, jclass, jstring,jstring);
+        (JNIEnv *, jobject, jstring,jstring);
 
 
 /*

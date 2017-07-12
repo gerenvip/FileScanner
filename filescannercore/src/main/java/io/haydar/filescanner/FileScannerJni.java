@@ -1,7 +1,11 @@
 package io.haydar.filescanner;
 
 
+import android.util.Log;
+
 import java.util.ArrayList;
+
+import io.haydar.filescanner.util.FilterUtil;
 
 /**
  * @author Haydar
@@ -29,6 +33,14 @@ public class FileScannerJni {
 
     public static boolean isLoadJNISuccess() {
         return mLoadSuccess;
+    }
+
+    public static boolean isFileSupport(String filePath, long fileSize) {
+        Log.e("WW", "isFileSupport filePath:" + filePath + "; fileSize=" + fileSize);
+//        if (FilterUtil.isInBlackList(filePath)) {
+//            return false;
+//        }
+        return FilterUtil.isSupportType(filePath) && FilterUtil.isFileSizeSupport(fileSize);
     }
 
     public static native ArrayList<FileInfo> scanDirs(String paramString);

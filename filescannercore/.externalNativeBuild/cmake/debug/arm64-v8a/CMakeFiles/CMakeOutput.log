@@ -1,63 +1,67 @@
 The target system is: Android - 21 - aarch64
-The host system is: Darwin - 16.0.0 - x86_64
+The host system is: Darwin - 16.4.0 - x86_64
 Determining if the C compiler works passed with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_1c113"
-[1/2] Building C object CMakeFiles/cmTC_1c113.dir/testCCompiler.c.o
-[2/2] Linking C executable cmTC_1c113
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_b7782"
+[1/2] Building C object CMakeFiles/cmTC_b7782.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_b7782
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_cfc6f"
-[1/2] Building C object CMakeFiles/cmTC_cfc6f.dir/CMakeCCompilerABI.c.o
-[2/2] Linking C executable cmTC_cfc6f
-Android clang version 3.8.275480  (based on LLVM 3.8.275480)
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_ae4a9"
+[1/2] Building C object CMakeFiles/cmTC_ae4a9.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_ae4a9
+Android clang version 5.0.300080  (based on LLVM 5.0.300080)
 Target: aarch64-none-linux-android
 Thread model: posix
-InstalledDir: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin
-Found candidate GCC installation: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x
-Selected GCC installation: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x
+InstalledDir: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin
+Found candidate GCC installation: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x
+Selected GCC installation: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
- "/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64 -pie --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_cfc6f /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_cfc6f.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtend_android.o
+ "/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64 -pie --fix-cortex-a53-843419 --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_ae4a9 /Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/aarch64 -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib --exclude-libs libgcc.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_ae4a9.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtend_android.o
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(aarch64-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_cfc6f"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_cfc6f.dir/CMakeCCompilerABI.c.o]
-  ignore line: [[2/2] Linking C executable cmTC_cfc6f]
-  ignore line: [Android clang version 3.8.275480  (based on LLVM 3.8.275480)]
+  ignore line: [Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_ae4a9"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_ae4a9.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_ae4a9]
+  ignore line: [Android clang version 5.0.300080  (based on LLVM 5.0.300080)]
   ignore line: [Target: aarch64-none-linux-android]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin]
-  ignore line: [Found candidate GCC installation: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
-  ignore line: [Selected GCC installation: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [InstalledDir: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin]
+  ignore line: [Found candidate GCC installation: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
   ignore line: [Candidate multilib: .]
   ignore line: [@m64]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64 -pie --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_cfc6f /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_cfc6f.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtend_android.o]
-    arg [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld] ==> ignore
-    arg [--sysroot=/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64] ==> ignore
+  link line: [ "/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64 -pie --fix-cortex-a53-843419 --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_ae4a9 /Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/aarch64 -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib --exclude-libs libgcc.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_ae4a9.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtend_android.o]
+    arg [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld] ==> ignore
+    arg [--sysroot=/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64] ==> ignore
     arg [-pie] ==> ignore
+    arg [--fix-cortex-a53-843419] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
     arg [aarch64linux] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker64] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_cfc6f] ==> ignore
-    arg [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o] ==> ignore
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64]
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib]
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib]
+    arg [cmTC_ae4a9] ==> ignore
+    arg [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o] ==> ignore
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/aarch64] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/aarch64]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib]
+    arg [--exclude-libs] ==> ignore
+    arg [libgcc.a] ==> ignore
     arg [--build-id] ==> ignore
     arg [--warn-shared-textrel] ==> ignore
     arg [--fatal-warnings] ==> ignore
@@ -67,32 +71,33 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_cfc6f.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_ae4a9.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
     arg [-lc] ==> lib [c]
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
-    arg [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtend_android.o] ==> ignore
+    arg [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtend_android.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/aarch64-linux-android/lib64]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/aarch64-linux-android/lib]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/aarch64] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/aarch64]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/aarch64-linux-android/lib64]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/aarch64-linux-android/lib]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib]
   implicit libs: [dl;c;dl]
-  implicit dirs: [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x;/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/aarch64-linux-android/lib64;/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/aarch64-linux-android/lib;/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib]
+  implicit dirs: [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/aarch64;/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x;/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/aarch64-linux-android/lib64;/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/aarch64-linux-android/lib;/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib]
   implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_4c8f7"
-[1/2] Building C object CMakeFiles/cmTC_4c8f7.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_4c8f7
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_b5275"
+[1/2] Building C object CMakeFiles/cmTC_b5275.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_b5275
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -102,11 +107,11 @@ Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_75686"
-[1/2] Building C object CMakeFiles/cmTC_75686.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_75686
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_14f51"
+[1/2] Building C object CMakeFiles/cmTC_14f51.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_14f51
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -116,11 +121,11 @@ Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_f8603"
-[1/2] Building C object CMakeFiles/cmTC_f8603.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_f8603
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_acc82"
+[1/2] Building C object CMakeFiles/cmTC_acc82.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_acc82
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -128,63 +133,67 @@ Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_919c4"
-[1/2] Building CXX object CMakeFiles/cmTC_919c4.dir/testCXXCompiler.cxx.o
-[2/2] Linking CXX executable cmTC_919c4
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_653e2"
+[1/2] Building CXX object CMakeFiles/cmTC_653e2.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_653e2
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_a4419"
-[1/2] Building CXX object CMakeFiles/cmTC_a4419.dir/CMakeCXXCompilerABI.cpp.o
-[2/2] Linking CXX executable cmTC_a4419
-Android clang version 3.8.275480  (based on LLVM 3.8.275480)
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_fb91b"
+[1/2] Building CXX object CMakeFiles/cmTC_fb91b.dir/CMakeCXXCompilerABI.cpp.o
+[2/2] Linking CXX executable cmTC_fb91b
+Android clang version 5.0.300080  (based on LLVM 5.0.300080)
 Target: aarch64-none-linux-android
 Thread model: posix
-InstalledDir: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin
-Found candidate GCC installation: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x
-Selected GCC installation: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x
+InstalledDir: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin
+Found candidate GCC installation: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x
+Selected GCC installation: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
- "/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64 -pie --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_a4419 /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_a4419.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtend_android.o
+ "/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64 -pie --fix-cortex-a53-843419 --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_fb91b /Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/aarch64 -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib --exclude-libs libgcc.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_fb91b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtend_android.o
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(aarch64-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_a4419"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_a4419.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [[2/2] Linking CXX executable cmTC_a4419]
-  ignore line: [Android clang version 3.8.275480  (based on LLVM 3.8.275480)]
+  ignore line: [Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_fb91b"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_fb91b.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [[2/2] Linking CXX executable cmTC_fb91b]
+  ignore line: [Android clang version 5.0.300080  (based on LLVM 5.0.300080)]
   ignore line: [Target: aarch64-none-linux-android]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin]
-  ignore line: [Found candidate GCC installation: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
-  ignore line: [Selected GCC installation: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [InstalledDir: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin]
+  ignore line: [Found candidate GCC installation: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
   ignore line: [Candidate multilib: .]
   ignore line: [@m64]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64 -pie --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_a4419 /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_a4419.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtend_android.o]
-    arg [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld] ==> ignore
-    arg [--sysroot=/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64] ==> ignore
+  link line: [ "/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64 -pie --fix-cortex-a53-843419 --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_fb91b /Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/aarch64 -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib --exclude-libs libgcc.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_fb91b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtend_android.o]
+    arg [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld] ==> ignore
+    arg [--sysroot=/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64] ==> ignore
     arg [-pie] ==> ignore
+    arg [--fix-cortex-a53-843419] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
     arg [aarch64linux] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker64] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_a4419] ==> ignore
-    arg [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o] ==> ignore
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64]
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib]
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib]
+    arg [cmTC_fb91b] ==> ignore
+    arg [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtbegin_dynamic.o] ==> ignore
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/aarch64] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/aarch64]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib]
+    arg [--exclude-libs] ==> ignore
+    arg [libgcc.a] ==> ignore
     arg [--build-id] ==> ignore
     arg [--warn-shared-textrel] ==> ignore
     arg [--fatal-warnings] ==> ignore
@@ -194,7 +203,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_a4419.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_fb91b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc] ==> lib [gcc]
@@ -204,28 +213,29 @@ Parsed CXX implicit link information from above output:
     arg [-lgcc] ==> lib [gcc]
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
-    arg [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtend_android.o] ==> ignore
+    arg [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib/crtend_android.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc]
   remove lib [gcc]
   remove lib [gcc]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/aarch64-linux-android/lib64]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/aarch64-linux-android/lib]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/aarch64] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/aarch64]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/aarch64-linux-android/lib64]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/aarch64-linux-android/lib]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib]
   implicit libs: [stdc++;m;dl;c;dl]
-  implicit dirs: [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x;/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/aarch64-linux-android/lib64;/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/aarch64-linux-android/lib;/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-21/arch-arm64/usr/lib]
+  implicit dirs: [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/aarch64;/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x;/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/aarch64-linux-android/lib64;/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/aarch64-linux-android/lib;/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-21/arch-arm64/usr/lib]
   implicit fwks: []
 
 
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_83dbb"
-[1/2] Building CXX object CMakeFiles/cmTC_83dbb.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_83dbb
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_7a62d"
+[1/2] Building CXX object CMakeFiles/cmTC_7a62d.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_7a62d
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -288,11 +298,11 @@ Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_2f51f"
-[1/2] Building CXX object CMakeFiles/cmTC_2f51f.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_2f51f
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_4a62d"
+[1/2] Building CXX object CMakeFiles/cmTC_4a62d.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_4a62d
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -355,11 +365,11 @@ Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_a65db"
-[1/2] Building CXX object CMakeFiles/cmTC_a65db.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_a65db
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_13f7f"
+[1/2] Building CXX object CMakeFiles/cmTC_13f7f.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_13f7f
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

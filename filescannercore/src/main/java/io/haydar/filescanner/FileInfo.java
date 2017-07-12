@@ -1,26 +1,37 @@
 package io.haydar.filescanner;
 
-import java.util.ArrayList;
+import android.support.annotation.IntDef;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
 /**
  * @author Haydar
  * @Package io.haydar.filescannercore
  * @DATE 2017-04-14
  */
-
 public class FileInfo {
     private int count;
     private String filePath;
     private long fileSize;
     private long lastModifyTime;
-    private int type;//1文件夹 2 mp3
 
-    public FileInfo(){
+    @FileType
+    private int type;//1文件夹 ;2 file
 
+    public static final int TYPE_DEFAULT = 0;
+    public static final int TYPE_DIR = 1;
+    public static final int TYPE_MEDIA = 2;
+
+    @IntDef(value = {TYPE_DEFAULT, TYPE_DIR, TYPE_MEDIA})
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface FileType {
+    }
+
+    public FileInfo() {
     }
 
     public int getCount() {
-        ArrayList list = new ArrayList();
         return count;
     }
 
@@ -56,7 +67,7 @@ public class FileInfo {
         return type;
     }
 
-    public void setType(int type) {
+    public void setType(@FileType int type) {
         this.type = type;
     }
 

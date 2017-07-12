@@ -1,46 +1,46 @@
 The target system is: Android - 15 - armv5te
-The host system is: Darwin - 16.0.0 - x86_64
+The host system is: Darwin - 16.4.0 - x86_64
 Determining if the C compiler works passed with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_c940c"
-[1/2] Building C object CMakeFiles/cmTC_c940c.dir/testCCompiler.c.o
-[2/2] Linking C executable cmTC_c940c
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_3ad01"
+[1/2] Building C object CMakeFiles/cmTC_3ad01.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_3ad01
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_97df1"
-[1/2] Building C object CMakeFiles/cmTC_97df1.dir/CMakeCCompilerABI.c.o
-[2/2] Linking C executable cmTC_97df1
-Android clang version 3.8.275480  (based on LLVM 3.8.275480)
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_4148d"
+[1/2] Building C object CMakeFiles/cmTC_4148d.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_4148d
+Android clang version 5.0.300080  (based on LLVM 5.0.300080)
 Target: armv5te-none-linux-android
 Thread model: posix
-InstalledDir: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin
-Found candidate GCC installation: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x
-Selected GCC installation: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x
+InstalledDir: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin
+Found candidate GCC installation: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x
+Selected GCC installation: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x
 Candidate multilib: thumb;@thumb
 Candidate multilib: armv7-a;@armv7
 Candidate multilib: armv7-a/thumb;@armv7@thumb
 Candidate multilib: .;
 Selected multilib: thumb;@thumb
- "/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld" --sysroot=/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm -X --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_97df1 /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtbegin_dynamic.o -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_97df1.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtend_android.o
+ "/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld" --sysroot=/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm -X --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_4148d /Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtbegin_dynamic.o -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/arm -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb -L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb -L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib --exclude-libs libgcc.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_4148d.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtend_android.o
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-linux-androideabi-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_97df1"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_97df1.dir/CMakeCCompilerABI.c.o]
-  ignore line: [[2/2] Linking C executable cmTC_97df1]
-  ignore line: [Android clang version 3.8.275480  (based on LLVM 3.8.275480)]
+  ignore line: [Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_4148d"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_4148d.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_4148d]
+  ignore line: [Android clang version 5.0.300080  (based on LLVM 5.0.300080)]
   ignore line: [Target: armv5te-none-linux-android]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin]
-  ignore line: [Found candidate GCC installation: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x]
-  ignore line: [Selected GCC installation: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x]
+  ignore line: [InstalledDir: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin]
+  ignore line: [Found candidate GCC installation: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x]
+  ignore line: [Selected GCC installation: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x]
   ignore line: [Candidate multilib: thumb]
   ignore line: [@thumb]
   ignore line: [Candidate multilib: armv7-a]
@@ -51,9 +51,9 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [Selected multilib: thumb]
   ignore line: [@thumb]
-  link line: [ "/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld" --sysroot=/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm -X --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_97df1 /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtbegin_dynamic.o -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_97df1.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtend_android.o]
-    arg [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld] ==> ignore
-    arg [--sysroot=/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm] ==> ignore
+  link line: [ "/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld" --sysroot=/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm -X --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_4148d /Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtbegin_dynamic.o -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/arm -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb -L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb -L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib --exclude-libs libgcc.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_4148d.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtend_android.o]
+    arg [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld] ==> ignore
+    arg [--sysroot=/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm] ==> ignore
     arg [-X] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
@@ -61,13 +61,16 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_97df1] ==> ignore
-    arg [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtbegin_dynamic.o] ==> ignore
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb]
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb]
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib]
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb]
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib]
+    arg [cmTC_4148d] ==> ignore
+    arg [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtbegin_dynamic.o] ==> ignore
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/arm] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/arm]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib]
+    arg [--exclude-libs] ==> ignore
+    arg [libgcc.a] ==> ignore
     arg [--build-id] ==> ignore
     arg [--warn-shared-textrel] ==> ignore
     arg [--fatal-warnings] ==> ignore
@@ -77,33 +80,34 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_97df1.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_4148d.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
     arg [-lc] ==> lib [c]
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
-    arg [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtend_android.o] ==> ignore
+    arg [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtend_android.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/arm-linux-androideabi/lib/thumb]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/arm-linux-androideabi/lib/thumb]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/arm] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/arm]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/arm-linux-androideabi/lib/thumb]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/arm-linux-androideabi/lib/thumb]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib]
   implicit libs: [dl;c;dl]
-  implicit dirs: [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb;/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/arm-linux-androideabi/lib/thumb;/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib]
+  implicit dirs: [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/arm;/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb;/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/arm-linux-androideabi/lib/thumb;/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib]
   implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_d348b"
-[1/2] Building C object CMakeFiles/cmTC_d348b.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_d348b
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_55f1d"
+[1/2] Building C object CMakeFiles/cmTC_55f1d.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_55f1d
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -113,11 +117,11 @@ Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_d8c7c"
-[1/2] Building C object CMakeFiles/cmTC_d8c7c.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_d8c7c
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_a2f27"
+[1/2] Building C object CMakeFiles/cmTC_a2f27.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_a2f27
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -127,11 +131,11 @@ Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_9eac9"
-[1/2] Building C object CMakeFiles/cmTC_9eac9.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_9eac9
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_e35d0"
+[1/2] Building C object CMakeFiles/cmTC_e35d0.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_e35d0
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -139,46 +143,46 @@ Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_97486"
-[1/2] Building CXX object CMakeFiles/cmTC_97486.dir/testCXXCompiler.cxx.o
-[2/2] Linking CXX executable cmTC_97486
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_d18d1"
+[1/2] Building CXX object CMakeFiles/cmTC_d18d1.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_d18d1
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_cca52"
-[1/2] Building CXX object CMakeFiles/cmTC_cca52.dir/CMakeCXXCompilerABI.cpp.o
-[2/2] Linking CXX executable cmTC_cca52
-Android clang version 3.8.275480  (based on LLVM 3.8.275480)
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_dde07"
+[1/2] Building CXX object CMakeFiles/cmTC_dde07.dir/CMakeCXXCompilerABI.cpp.o
+[2/2] Linking CXX executable cmTC_dde07
+Android clang version 5.0.300080  (based on LLVM 5.0.300080)
 Target: armv5te-none-linux-android
 Thread model: posix
-InstalledDir: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin
-Found candidate GCC installation: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x
-Selected GCC installation: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x
+InstalledDir: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin
+Found candidate GCC installation: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x
+Selected GCC installation: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x
 Candidate multilib: thumb;@thumb
 Candidate multilib: armv7-a;@armv7
 Candidate multilib: armv7-a/thumb;@armv7@thumb
 Candidate multilib: .;
 Selected multilib: thumb;@thumb
- "/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld" --sysroot=/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm -X --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_cca52 /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtbegin_dynamic.o -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_cca52.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtend_android.o
+ "/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld" --sysroot=/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm -X --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_dde07 /Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtbegin_dynamic.o -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/arm -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb -L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb -L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib --exclude-libs libgcc.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_dde07.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtend_android.o
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-linux-androideabi-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_cca52"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_cca52.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [[2/2] Linking CXX executable cmTC_cca52]
-  ignore line: [Android clang version 3.8.275480  (based on LLVM 3.8.275480)]
+  ignore line: [Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_dde07"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_dde07.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [[2/2] Linking CXX executable cmTC_dde07]
+  ignore line: [Android clang version 5.0.300080  (based on LLVM 5.0.300080)]
   ignore line: [Target: armv5te-none-linux-android]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin]
-  ignore line: [Found candidate GCC installation: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x]
-  ignore line: [Selected GCC installation: /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x]
+  ignore line: [InstalledDir: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin]
+  ignore line: [Found candidate GCC installation: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x]
+  ignore line: [Selected GCC installation: /Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x]
   ignore line: [Candidate multilib: thumb]
   ignore line: [@thumb]
   ignore line: [Candidate multilib: armv7-a]
@@ -189,9 +193,9 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [Selected multilib: thumb]
   ignore line: [@thumb]
-  link line: [ "/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld" --sysroot=/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm -X --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_cca52 /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtbegin_dynamic.o -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb -L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_cca52.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtend_android.o]
-    arg [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld] ==> ignore
-    arg [--sysroot=/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm] ==> ignore
+  link line: [ "/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld" --sysroot=/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm -X --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_dde07 /Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtbegin_dynamic.o -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/arm -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb -L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib -L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb -L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib --exclude-libs libgcc.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_dde07.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtend_android.o]
+    arg [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld] ==> ignore
+    arg [--sysroot=/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm] ==> ignore
     arg [-X] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
@@ -199,13 +203,16 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_cca52] ==> ignore
-    arg [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtbegin_dynamic.o] ==> ignore
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb]
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb]
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib]
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb]
-    arg [-L/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib] ==> dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib]
+    arg [cmTC_dde07] ==> ignore
+    arg [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtbegin_dynamic.o] ==> ignore
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/arm] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/arm]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb]
+    arg [-L/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib] ==> dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib]
+    arg [--exclude-libs] ==> ignore
+    arg [libgcc.a] ==> ignore
     arg [--build-id] ==> ignore
     arg [--warn-shared-textrel] ==> ignore
     arg [--fatal-warnings] ==> ignore
@@ -215,7 +222,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_cca52.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_dde07.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc] ==> lib [gcc]
@@ -225,29 +232,30 @@ Parsed CXX implicit link information from above output:
     arg [-lgcc] ==> lib [gcc]
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
-    arg [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtend_android.o] ==> ignore
+    arg [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib/crtend_android.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc]
   remove lib [gcc]
   remove lib [gcc]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/arm-linux-androideabi/lib/thumb]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/arm-linux-androideabi/lib/thumb]
-  collapse library dir [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib] ==> [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/arm] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/arm]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/thumb] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/arm-linux-androideabi/lib/thumb]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib/../lib] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/thumb] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/arm-linux-androideabi/lib/thumb]
+  collapse library dir [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib] ==> [/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib]
   implicit libs: [stdc++;m;dl;c;dl]
-  implicit dirs: [/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb;/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/arm-linux-androideabi/lib/thumb;/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/ndk-bundle/platforms/android-15/arch-arm/usr/lib]
+  implicit dirs: [/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/5.0.300080/lib/linux/arm;/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/thumb;/Users/wangwei/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/arm-linux-androideabi/lib/thumb;/Users/wangwei/android-sdk-macosx/ndk-bundle/platforms/android-15/arch-arm/usr/lib]
   implicit fwks: []
 
 
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_6d5d0"
-[1/2] Building CXX object CMakeFiles/cmTC_6d5d0.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_6d5d0
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_53edf"
+[1/2] Building CXX object CMakeFiles/cmTC_53edf.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_53edf
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -310,11 +318,11 @@ Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_5868b"
-[1/2] Building CXX object CMakeFiles/cmTC_5868b.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_5868b
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_49bb2"
+[1/2] Building CXX object CMakeFiles/cmTC_49bb2.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_49bb2
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -377,11 +385,11 @@ Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /Users/gjy/Documents/dev/study/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
+Change Dir: /Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/gjy/Documents/dev/adt-bundle-mac-x86_64-20140702/cmake/3.6.3155560/bin/ninja" "cmTC_394a4"
-[1/2] Building CXX object CMakeFiles/cmTC_394a4.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_394a4
+Run Build Command:"/Users/wangwei/android-sdk-macosx/cmake/3.6.4111459/bin/ninja" "cmTC_3e01f"
+[1/2] Building CXX object CMakeFiles/cmTC_3e01f.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_3e01f
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

@@ -20,7 +20,6 @@ import io.haydar.filescanner.util.LogUtil;
  * @Package io.haydar.filescannercore
  * @DATE 2017-04-13
  */
-
 public class LocalFileCacheManager {
     public static final String TAG = "LocalFileCacheManager";
     private HandlerThread mWorkThread;
@@ -58,7 +57,7 @@ public class LocalFileCacheManager {
      * 扫描文件夹并且保存到数据库中
      */
     public void scanDirAndSaveToDb(String path, int scanType) {
-        ArrayList<FileInfo> localDirsArrayList;
+        List<FileInfo> localDirsArrayList;
         localDirsArrayList = ScannerWrapper.scanDirs(path);
         if (localDirsArrayList == null || localDirsArrayList.size() == 0) {
             LogUtil.i(TAG, "scanDirAndSaveToDb: 文件夹扫描为空");
@@ -70,7 +69,7 @@ public class LocalFileCacheManager {
                 taskIng(localDirsArrayList.get(i).getFilePath(), (int) (100 / (float) (localDirsArrayList.size() / 100.00 * 100) * i));
             }
             String folder_id = ScannerUtil.getFolderId(localDirsArrayList.get(i).getFilePath());
-            ArrayList<FileInfo> filesArrayList = ScannerWrapper.scanFiles(localDirsArrayList.get(i).getFilePath(), FileScanner.getType());
+            List<FileInfo> filesArrayList = ScannerWrapper.scanFiles(localDirsArrayList.get(i).getFilePath(), FileScanner.getType());
             //循环文件列表,文件插入到文件列表中
             mDBFilesHelper.insertNewFiles(filesArrayList, folder_id,mCommonListener);
             localDirsArrayList.get(i).setCount(filesArrayList.size());
@@ -170,7 +169,7 @@ public class LocalFileCacheManager {
         for (int i = 0; i < updateDirsList.size(); i++) {
             fileInfo = updateDirsList.get(i);
             taskIng(fileInfo.getFilePath(), (int) (100 / (float) (updateDirsList.size() / 100.00 * 100) * i));
-            ArrayList<FileInfo> newFilesList = ScannerWrapper.scanFiles(fileInfo.getFilePath(), FileScanner.getType());
+            List<FileInfo> newFilesList = ScannerWrapper.scanFiles(fileInfo.getFilePath(), FileScanner.getType());
             //如果扫描目录下没有文件,数据库里的此目录的数量大于0，需要删除数据库里的文件
             if (newFilesList == null || newFilesList.size() == 0) {
                 fileInfo.setCount(0);
@@ -207,7 +206,7 @@ public class LocalFileCacheManager {
                 }
             }
             //扫描目录中的文件夹(不扫描子目录)
-            ArrayList<FileInfo> newDirsList = ScannerWrapper.scanUpdateDirs(fileInfo.getFilePath());
+            List<FileInfo> newDirsList = ScannerWrapper.scanUpdateDirs(fileInfo.getFilePath());
             if (newDirsList == null || newDirsList.size() == 0) {
                 //如果目录中没有文件夹，则把数据库中目录的记录删除
                 deleteDirList(newDirsList);
@@ -231,7 +230,7 @@ public class LocalFileCacheManager {
      *
      * @param deleteDirsList
      */
-    private void deleteDirList(ArrayList<FileInfo> deleteDirsList) {
+    private void deleteDirList(List<FileInfo> deleteDirsList) {
         if (deleteDirsList.size() > 0) {
             for (FileInfo fileInfo : deleteDirsList) {
                 if (fileInfo.getCount() > 0) {

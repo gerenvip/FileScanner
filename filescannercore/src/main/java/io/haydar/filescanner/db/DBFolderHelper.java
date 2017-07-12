@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.text.TextUtils;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import io.haydar.filescanner.FileInfo;
 import io.haydar.filescanner.util.LogUtil;
@@ -38,7 +39,7 @@ public class DBFolderHelper {
     }
 
 
-    public void insertNewDirs(ArrayList<FileInfo> dirsList) {
+    public void insertNewDirs(List<FileInfo> dirsList) {
         DBManager.getWriteDB(mContext).beginTransaction();
         try {
             for (FileInfo fileInfo : dirsList) {
@@ -124,7 +125,7 @@ public class DBFolderHelper {
      *
      * @param deleteDirsList
      */
-    public void deleteFolder(ArrayList<FileInfo> deleteDirsList) {
+    public void deleteFolder(List<FileInfo> deleteDirsList) {
         DBManager.getWriteDB(mContext).beginTransaction();
         try {
             for (FileInfo fileInfo : deleteDirsList) {

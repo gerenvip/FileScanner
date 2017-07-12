@@ -70,7 +70,6 @@ public class FileScanner {
         return ScannerUtil.isNeedToScannerAll(mContext);
     }
 
-
     private void setCommonListener(ScannerListener mCommonListener) {
         LocalFileCacheManager.getInstance(mContext).setCommonListener(mCommonListener);
     }
