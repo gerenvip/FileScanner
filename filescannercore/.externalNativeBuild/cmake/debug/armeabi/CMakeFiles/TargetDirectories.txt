@@ -1,3 +1,0 @@
-/Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/edit_cache.dir
-/Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/rebuild_cache.dir
-/Users/wangwei/Projects/music/FileScanner/filescannercore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/FileScanner.dir
